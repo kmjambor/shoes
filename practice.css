@@ -1,0 +1,81 @@
+@font-face{
+	font-family: 'LeagueMono';
+	src: url(../fonts/LeagueMono.ttf);
+}
+
+body{
+	background: black;
+}
+
+.container{
+	width: 300px;
+	height: 600px;
+	position: absolute;
+	background: linear-gradient(45deg, red, #6C1D45,  #F395C7, #6C1D45, red);
+	background-size: 300% 300%;
+	left: 40%;
+	top: 10%;
+	z-index: 1;
+	animation: gradient 10s infinite;
+	overflow: hidden;
+}
+
+.image{
+	width: 340px;
+	height: 300px;
+	position: absolute;
+	background: url(../images/shoes.jpeg);
+	background-size: 100%;
+	left: -20px;
+	top: 160px;
+	z-index: -1;
+}
+
+.brand{
+	font-family: 'Montserrat', sans-serif;
+	color: white;
+	font-weight: bolder;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.title{
+	font-family: LeagueMono;
+	font-size: 40px ;
+	text-align: center;
+	color: black;
+	top: 25px;
+	z-index: 2;
+	animation: league 2s alternate infinite linear;
+}
+
+.price{
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 15px;
+	color: white;
+	font-weight: bold;
+	top: 505px;
+	left: 115px;
+}
+
+.bold{
+	font-family: LeagueMono;
+	font-size: 20px;
+	color: black;
+
+}
+
+@keyframes league{
+	0%{font-variation-settings: "wdth" 30;}
+	100%{font-variation-settings: "wdth" 150;}
+}
+
+@keyframes gradient{
+	0% {background-position: 0% 50%}
+	50% {background-position: 100% 50%}
+	100% {background-position: 0% 50%}
+}
+
+
